@@ -39,7 +39,7 @@ body{
     top: -15px;
     right: -10px;
     padding: 2px;
-    border-radius: 2px;
+    border-radius: 1px;
 }
 
 .shoppage{
@@ -49,7 +49,46 @@ body{
     justify-content: center;
 }
 
+@media (max-width: 1200px) {
+    .shoppage{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 950px) {
+    .shoppage{
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
 .listitems{
     border: 3px solid black;
     border-radius: 6px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btn{
+    display: flex;
+    gap: 10px;
+}
+
+.bi-dash-lg{
+    color: red;
+}
+
+.bi-plus-lg{
+    color: green;
 }

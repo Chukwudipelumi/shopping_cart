@@ -1,0 +1,1 @@
+let shoppage = document.getElementbyId("shoppage")
